@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: nodered
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: NODE_RED_USERNAME
+        value: "admin"
+      - key: NODE_RED_PASSWORD
+        value: "RADHEkrishna25@@"  # 👈 Change this to a strong password later!
+      - key: NODE_ENV
+        value: "production"
